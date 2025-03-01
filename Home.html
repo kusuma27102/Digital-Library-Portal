@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            background: #34495e;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 15px;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 20px;
+        }
+        .search-bar select, .search-bar input {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .search-bar button {
+            padding: 10px 15px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://source.unsplash.com/1600x600/?library,books') no-repeat center center/cover;
+            height: 350px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+        }
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+            text-align: center;
+        }
+        .category {
+            background: white;
+            padding: 20px;
+            box-shadow: 2px 2px 10px gray;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .category:hover {
+            background: #ecf0f1;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Digital Library</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Catalogue</a>
+        <a href="#">Books</a>
+        <a href="#">Media</a>
+        <a href="#">Programs</a>
+        <a href="#">Research</a>
+    </nav>
+
+    <div class="search-bar">
+        <select>
+            <option>Catalogue</option>
+            <option>Books</option>
+            <option>Authors</option>
+        </select>
+        <input type="text" placeholder="Search the catalogue">
+        <button>Search</button>
+    </div>
+
+    <div class="hero">
+        <p>Welcome to the Digital Library - Explore a World of Knowledge!</p>
+    </div>
+
+    <div class="categories">
+        <div class="category">📚 Books & Ebooks</div>
+        <div class="category">🎬 Movies & TV</div>
+        <div class="category">🎵 Music & Video Games</div>
+        <div class="category">📰 Newspapers & Magazines</div>
+        <div class="category">📍 Locations & Hours</div>
+        <div class="category">📖 Using the Library</div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Digital Library</p>
+    </footer>
+</body>
+</html>

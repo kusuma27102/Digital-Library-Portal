@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Digital Library Portal</title>
+    <link rel="stylesheet" href="web2.css">
+        <link rel="stylesheet" href="login.css">
+
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <h2>Login to Digital Library</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevents form from refreshing the page
+            window.location.href = "index.html"; // Redirects to homepage after login
+        });
+    </script>
+</body>
+</html>
